@@ -59,7 +59,9 @@ tBodyGyroJerkMean
 The complete list of variables of each feature vector is available in 'features.txt'
 
 
-##Addendum
+Addendum
+========
+
 This data is compiled into two tidy data sets, in accordance with the instructions for "Getting and Cleaning Data: Course Project". 
 
 The first, Total_Data, brings together the test and training datasets and only includes variables relating to the mean and standard deviation of a particular measurement (81 columns: subject, activity, and 79 different measurements). 
