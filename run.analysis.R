@@ -88,8 +88,8 @@ run.analysis <- function (){
         }
         
         Total_Data <<- combined
-        write.table(combined, "/Users/dbondeso/Desktop/Coursera/Cleaning Data/Course Project/UCI HAR Dataset/Total_Data.txt")
-        print("The combined, tidy dataset is stored as Total_Data")
+        write.table(combined, "/Users/dbondeso/Desktop/Coursera/Cleaning Data/Course Project/UCI HAR Dataset/Total_Data.txt", row.names = F)
+        print("The combined tidy dataset is stored as Total_Data")
         
         
         # From Total_Data, create a second, independent tidy 
@@ -106,7 +106,7 @@ run.analysis <- function (){
                 summary[,i] <- as.numeric(summary[,i])
         }
         Summary_Table <<- summary
-        write.table(summary, "/Users/dbondeso/Desktop/Coursera/Cleaning Data/Course Project/UCI HAR Dataset/Summary_Table.txt")
+        write.table(summary, "/Users/dbondeso/Desktop/Coursera/Cleaning Data/Course Project/UCI HAR Dataset/Summary_Table.txt", row.names = F)
         write.table(names(summary), "/Users/dbondeso/Desktop/Coursera/Cleaning Data/Course Project/UCI HAR Dataset/Tidy_Var_Names.txt")
         #Go back to the original directory and tell the user. 
         print("Averages for each subject/activity pair is stored as Summary_Table")
